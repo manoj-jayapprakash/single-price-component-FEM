@@ -21,7 +21,7 @@ li {
 }
 
 .single-price {
-  max-width: 1200px;
+  max-width: 700px;
   margin: 0 auto;
   background-color: white;
   border-radius: 10px;
@@ -29,7 +29,7 @@ li {
 }
 
 section {
-  padding: 0 1.5rem;
+  padding: 1rem 1.5rem 2rem 1.5rem;
 }
 
 .title {
@@ -77,14 +77,13 @@ section {
   display: inline-block;
   padding: 1rem 2rem;
   text-align: center;
-  margin: 1rem 0;
+  margin-top: 1rem;
   border-radius: 5px;
   font-weight: 700;
 }
 
 .why-us {
-  background-color: hsla(179, 62%, 43%, 60%);
-  padding-bottom: 2rem;
+  background-color: hsla(179, 62%, 43%, 80%);
 }
 
 .attribution {
@@ -93,4 +92,20 @@ section {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 600px) {
+  .single-price {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .join {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .section-1__description {
+    font-size: 1.1rem;
+    margin-right: 4rem;
+  }
 }
